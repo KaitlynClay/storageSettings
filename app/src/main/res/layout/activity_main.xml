@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Switch
+        android:id="@+id/langSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="154dp"
+        android:minHeight="48dp"
+        android:text="Spanish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fontSwitch" />
+
+    <Switch
+        android:id="@+id/themeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="193dp"
+        android:minHeight="48dp"
+        android:text="Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/fontSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="154dp"
+        android:minHeight="48dp"
+        android:text="Large Font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/themeSwitch" />
+
+    <TextView
+        android:id="@+id/fontSizeView"
+        android:layout_width="278dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="89dp"
+        android:text="Example of larger font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/langSwitch" />
+
+    <TextView
+        android:id="@+id/langView"
+        android:layout_width="285dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="82dp"
+        android:text="Hi, I'm here to welcome you to this app!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fontSizeView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
